@@ -139,10 +139,12 @@ select {
 
     .row {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
     }
 
     select {
-        width: 100%;
+        width: 99%;
+        padding: 12px 20px;
+        font-size: 0.8rem;
     }
 }
