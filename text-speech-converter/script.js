@@ -1,4 +1,5 @@
 
+
 let voices = [];
 let voiceSelect = document.querySelector("select");
 
@@ -53,12 +54,6 @@ document.querySelector("button").addEventListener("click", () => {
     let selectedVoiceIndex = voiceSelect.value;  // Get the index of the selected voice
     if (voices.length > 0 && selectedVoiceIndex !== "") {
         speech.voice = voices[selectedVoiceIndex];  // Apply the selected voice
-        speech.lang = voices[selectedVoiceIndex].lang;  // Apply the selected voice's language
-    } else {
-        // Fallback to the first available voice if no voice is selected or voices are missing
-        console.warn("No voice selected or available, using fallback voice.");
-        speech.voice = voices[0];
-        speech.lang = voices[0].lang;
     }
 
     // Set the text for the speech
